@@ -1,6 +1,6 @@
 # Hermes Ops Digest
 
-**Generated:** 2026-04-08 (snapshot)
+**Generated:** 2026-04-09 13:35  (snapshot)
 **Workspace:** `/home/administrator/.hermes/`
 
 ---
@@ -9,15 +9,15 @@
 
 | Category | Count |
 |---|---|
-| Total tasks | 54 |
-| In progress | 0 |
-| Review (waiting Angel) | 4 |
+| Total tasks | 61 |
+| In progress | 1 |
+| Review (waiting Angel) | 3 |
 | Todo | 2 |
-| Recurring / automation | 7 |
+| Recurring / automation | 8 |
 | Blocked | 1 |
-| Done (all time) | 40 |
+| Done (all time) | 46 |
 | Content items | 23 |
-| Cron jobs (active) | 3 |
+| Cron jobs (active) | 4 |
 
 ---
 
@@ -25,9 +25,10 @@
 
 | Job | Schedule (ET) | Next Run | Last Status | Deliver |
 |---|---|---|---|---|
-| X Research Pipeline — Daily 7AM | 0 7 * * * | Apr 9, 7:00 AM | ok | Discord + origin |
-| Publication painpoint scan | 50 11 * * 2,4 | Apr 9, 11:50 AM | ok | local |
-| publication-weekly-buttondown-autodraft | 0 15 * * 4 | Apr 9, 3:00 PM | ok | local |
+| Publication painpoint scan | 50 11 * * 2,4 | 2026-04-14T11:50:00-04:00 | ok | local |
+| publication-weekly-buttondown-autodraft | 0 15 * * 4 | 2026-04-09T15:00:00-04:00 | ok | local |
+| X Research Pipeline — Daily 7AM | 0 7 * * * | 2026-04-10T07:00:00-04:00 | ok | origin, discord:1477414797757907075 |
+| ai-papers-tracker | 0 6 * * * | 2026-04-10T06:00:00-04:00 | ok | origin, discord:1477414797757907075 |
 
 ---
 
@@ -35,10 +36,9 @@
 
 | Task | Owner | Agent | What It Needs |
 |---|---|---|---|
-| Harbor and Cross Awaiting Artwork Review | me | mc | Angel approval to proceed to post |
-| [PUB][Phase 13] Newsletter automation upgrade | michael-knight | michael-knight | Angel review |
-| [PUB][Automation] Weekly Buttondown pipeline | michael-knight | michael-knight | Angel review |
-| Build X Research Posting Pipeline | michael-knight | mc | Angel review |
+| Harbor and Cross Awaiting Artwork Review | me | mc | [2026-04-07T06:14:05.684036] Images generated for Apr 07-13, 2026. 21 slides in composited/. Reply go to post. |
+| [PUB][Phase 13] Newsletter automation upgrade + typography spacing + thumbnail pipeline refresh | michael-knight | michael-knight | [2026-04-04 10:16] Phase 13 status: spacing fixes deployed (801cab3), newsletter autodraft upgraded, and ligne-claire th |
+| [PUB][Automation] Weekly Buttondown authorship + distribution pipeline | michael-knight | michael-knight | [2026-04-04 09:58] cron_status=ok last_run=2026-04-04T13:57:54Z action=skipped_existing mode=auto-draft email_id=em_7x98 |
 
 ---
 
@@ -46,7 +46,7 @@
 
 | Task | Owner | Priority |
 |---|---|---|
-| [PUB][Editorial] Apply style-guide revision wave to all live articles | michael-knight | **urgent** |
+| [PUB][Editorial] Apply style-guide revision wave to all live articles | michael-knight | urgent |
 | [PUB][IMG] Regenerate article images from ligne-claire prompt pack | pixel | medium |
 
 ---
@@ -55,7 +55,7 @@
 
 | Task | Blocker |
 |---|---|
-| [PUB][IMG] Re-render all thumbnails in ligne claire style | Cloudflare neurons quota exhausted (422/429). Need quota reset or paid plan to finish 2 remaining thumbnails: openclaw-2026... and home-healthcare... |
+| [PUB][IMG] Re-render all thumbnails in ligne claire style (existing + future) | [2026-04-04 10:16] Executed Cloudfire rerender batch: 7/9 article thumbnails regenerated and deployed (commit 6ac8e09). Remaining 2 failed due Cloudflare neuron |
 
 ---
 
@@ -63,13 +63,14 @@
 
 | Task | Owner | Last Run | Status |
 |---|---|---|---|
-| Harbor content pipeline — RSS research | openclaw | Apr 6 | ok |
-| Publication RSS scan | openclaw | Apr 8, 2:00 PM | ok |
-| Publication release watch | openclaw | Apr 8, 5:20 PM | ok |
-| Publication community scan | openclaw | Apr 8, 4:10 PM | ok |
-| Publication builder discovery | openclaw | Apr 8, 2:41 PM | ok |
-| Weekly Buttondown issue | openclaw | Apr 4 | ok |
-| Publication painpoint scan | openclaw | Apr 7 | ok |
+| [AUTO] AI Agent Papers Tracker | openclaw | 2026-04-09T16:45:39.173675+00:00 | ok |
+| [AUTO] Harbor content pipeline — RSS research and candidate generation | openclaw | — | — |
+| [AUTO] Publication RSS scan | openclaw | 2026-04-08T14:00:00Z | ok |
+| [AUTO] Publication release watch | openclaw | 2026-04-08T17:20:00Z | ok |
+| [AUTO] Publication community scan | openclaw | 2026-04-08T16:10:00Z | ok |
+| [AUTO] Publication builder discovery | openclaw | 2026-04-08T14:41:12.173290+00:00 | ok |
+| [AUTO] Weekly Buttondown issue | openclaw | 2026-04-04T13:57:54Z | ok |
+| [AUTO] Publication painpoint scan | openclaw | 2026-04-09T15:52:04.176171Z | ok |
 
 ---
 
@@ -77,13 +78,14 @@
 
 | Stage | Count |
 |---|---|
-| Published | 9 |
-| Ready (needs review) | 5 |
-| Idea | 9 |
+| Ideas | 0 |
+| Scripting | 0 |
+| Editing | 0 |
 | Scheduled | 0 |
 | Post | 0 |
+| Published | 9 |
 
-**Pipeline headroom:** 9 ideas, 5 ready. Nothing queued for immediate publish.
+**Pipeline headroom:** 9 ideas, 0 ready/in-flight items.
 
 ---
 
@@ -91,12 +93,12 @@
 
 | Date | Task | Summary |
 |---|---|---|
-| Apr 8 | X Research Pipeline | Ecosystem digest + OpenClaw research integrated into daily pipeline |
-| Apr 8 | OpenClaw ecosystem research | Full landscape: OpenClaw 2026.4.7/4.8, memory-wiki, ClawHub 47K skills, hermes-agent-self-evolution |
-| Apr 8 | Vault sync | hermes-digests repo live; ops-digest vault initialized |
-| Apr 7 | Harbor artwork | 21 slides generated for Apr 7-13 batch, awaiting Angel go |
-| Apr 4 | Phase 13 newsletter | Spacing fixes deployed (801cab3), newsletter upgrade in review |
-| Apr 4 | Typographic passes | Heading spacing and article detail spacing fixed |
+| 2026-04-09 | [OPS] Manual run of X research posts for Angel review | [2026-04-09 17:34] Manual cron trigger requested; latest session started but produced no new queued drafts. Surfaced existing approved/unpos |
+| 2026-04-09 | [OPS] Add AI papers vault export folder and dated files | [2026-04-09 16:45] Added Obsidian output path /mnt/c/Users/Administrator/Documents/HermesVault/Hermes/ai-agent-papers and confirmed writeup  |
+| 2026-04-09 | [OPS] Launch AI Agent Papers Tracker directive | [2026-04-09 16:30] Tracker initialized. Baseline snapshot created (364 papers). Cron job 4b0796f17aeb scheduled nightly 06:00 (America/New_Y |
+| 2026-04-09 | [OPS] Add @jasonkneen to X monitoring handles | [2026-04-09 15:27] Added @jasonkneen to: x-research-pipeline skill, X Research cron prompt (job 5435e6259845), and x-research-pipeline-direc |
+| 2026-04-09 | [OPS] Restore Hermes gateway for Telegram chat | [2026-04-09 15:25] Gateway was stopped. Restarted with 'hermes gateway run --replace' (systemd user bus unavailable). Verified process pid 1 |
+| 2026-04-08 | Ops Digest Process Article — published | [2026-04-08T20:02:52.540526] Hero image generated via cloudfire-one (flux-schnell). Glassmorphism/neomorphism editorial 3D style. URL: https |
 
 ---
 
@@ -105,13 +107,10 @@
 | Check | Status |
 |---|---|
 | Hermes gateway (port 8642) | running |
-| Hermes workspace (port 3000) | running |
-| CamoFox browser (port 9377) | running |
+| Hermes workspace (port 3000) | down |
+| CamoFox browser (port 9377) | down |
 | Postiz API | connected |
-| Discord | connected |
-| Telegram (Harbor bot) | connected |
-| GitHub (hermes-digests) | push ok |
-| GitHub (hermes-ops-digest) | push ok |
+| Discord | down |
 
 ---
 
